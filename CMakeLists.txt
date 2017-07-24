@@ -6,7 +6,7 @@ HunterGate(
     SHA1 "3154fdc77457d6ebec50ba2862ebc341fed25fed"
 )
 
-project(aws-iot-sdk-cpp CXX)
+project(aws-iot-sdk-cpp C CXX)
 option(BUILD_SHARED_LIBRARY "Build the library as a shared object, will build it as a static library otherwise" NO)
 
 ######################################
