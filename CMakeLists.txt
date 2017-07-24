@@ -1,4 +1,11 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
+
+include("cmake/HunterGate.cmake")
+HunterGate(
+    URL "https://github.com/ruslo/hunter/archive/v0.19.38.tar.gz"
+    SHA1 "3154fdc77457d6ebec50ba2862ebc341fed25fed"
+)
+
 project(aws-iot-sdk-cpp CXX)
 option(BUILD_SHARED_LIBRARY "Build the library as a shared object, will build it as a static library otherwise" NO)
 

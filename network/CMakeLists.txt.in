@@ -56,6 +56,7 @@ if(${NETWORK_LIBRARY} MATCHES "MbedTLS")
 else()
 	# Check for required packages (OpenSSL)
 	#if using Mac OS, comment find_package(OpenSSL REQUIRED) and uncomment following two lines. Change the path to your openssl 1.0.2 directory.
+	hunter_add_package(OpenSSL)
 	find_package(OpenSSL REQUIRED)
     #set(OPENSSL_INCLUDE_DIR "YOUR_OPENSSL_PATH/include")
     #set(OPENSSL_LIBRARIES "YOUR_OPENSSL_PATH/lib/libssl.a;YOUR_OPENSSL_PATH/lib/libcrypto.a")
