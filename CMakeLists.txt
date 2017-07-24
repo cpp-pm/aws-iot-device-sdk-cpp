@@ -4,6 +4,7 @@ include("cmake/HunterGate.cmake")
 HunterGate(
     URL "https://github.com/ruslo/hunter/archive/v0.19.38.tar.gz"
     SHA1 "3154fdc77457d6ebec50ba2862ebc341fed25fed"
+    LOCAL
 )
 
 project(aws-iot-sdk-cpp C CXX)
